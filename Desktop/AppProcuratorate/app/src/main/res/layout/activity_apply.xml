@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_height="@dimen/item_height">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:layout_height="@dimen/item_height">
+                <TextView
+                    android:text="申请部门："
+                    android:textColor="@color/black"
+                    android:layout_width="@dimen/lable_width"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Department"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="审核人："
+                    android:textColor="@color/black"
+                    android:layout_width="@dimen/lable_width"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_person_shen"
+                    android:text="暂无"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="申请人    ："
+                    android:textColor="@color/black"
+                    android:layout_width="@dimen/lable_width"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_apply_person"
+                    android:text="ApplyName"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="申请结果："
+                    android:textColor="@color/black"
+                    android:layout_width="@dimen/lable_width"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_result_apply"
+                    android:text="暂无"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="申请日期："
+                    android:textColor="@color/black"
+                    android:layout_width="@dimen/lable_width"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="TimeNow"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_data_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="审核意见："
+                    android:textColor="@color/black"
+                    android:layout_width="@dimen/lable_width"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_idea"
+                    android:text="暂无"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+            <TextView
+                android:text="乘车人数："
+                android:textColor="@color/black"
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_car_num_peo"
+                android:inputType="number"
+                android:padding="2dp"
+                android:textSize="@dimen/edit_size"
+                android:background="@drawable/border_lable"
+                android:singleLine="true"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+            <TextView
+                android:text="出发地："
+                android:textColor="@color/black"
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_origin"
+                android:singleLine="true"
+                android:textSize="@dimen/edit_size"
+                android:background="@drawable/border_lable"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+            <TextView
+                android:text="目的地："
+                android:textColor="@color/black"
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:padding="2dp"
+                android:singleLine="true"
+                android:textSize="@dimen/edit_size"
+                android:background="@drawable/border_lable"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/et_destination"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+            <TextView
+                android:text="开始时间："
+                android:textColor="@color/black"
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_begin_time"
+                android:padding="2dp"
+                android:textSize="@dimen/edit_size"
+                android:inputType="datetime"
+                android:singleLine="true"
+                android:background="@drawable/border_lable"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"  />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+            <TextView
+                android:text="结束时间："
+                android:textColor="@color/black"
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:inputType="datetime"
+                android:id="@+id/tv_end_time"
+                android:singleLine="true"
+                android:padding="2dp"
+                android:textSize="@dimen/edit_size"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:background="@drawable/border_lable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+            <TextView
+                android:text="联系电话："
+                android:textColor="@color/black"
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:background="@drawable/border_lable"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:id="@+id/tv_phone_num"
+                android:textSize="@dimen/edit_size"
+                android:padding="2dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+            <TextView
+                android:text="用车事由："
+                android:textColor="@color/black"
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:background="@drawable/border_lable"
+                android:singleLine="true"
+                android:textSize="@dimen/edit_size"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_why_car"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+            <TextView
+                android:text="车辆要求："
+                android:textColor="@color/black"
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:background="@drawable/border_lable"
+                android:padding="2dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:id="@+id/et_car_require"
+                android:textSize="@dimen/edit_size"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/bg_background"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_height="80dp">
+            <TextView
+                android:text="备注："
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_mark"
+                android:singleLine="true"
+                android:textSize="@dimen/edit_size"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit_apply"
+            android:text="提交申请"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <Button
+            android:id="@+id/btn_revoke_apply"
+            android:text="撤销申请"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+    </LinearLayout>
+</ScrollView>

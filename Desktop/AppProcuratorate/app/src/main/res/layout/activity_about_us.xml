@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    tools:context="com.procuratorate.app.activity.AboutUsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/bg_background"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/icon_ban"
+            android:src="@drawable/center_version"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_toRightOf="@+id/icon_ban"
+            android:gravity="center"
+            android:id="@+id/tv_version"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="v 1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="@color/bg_title"
+        android:layout_marginLeft="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:background="@color/bg_background"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/icon_company"
+            android:src="@drawable/center_dev"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_toRightOf="@+id/icon_company"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="成都深想科技有限公司"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>
