@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">车辆调度</string>
+    <string name="empty_show">暂无数据</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_background"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:background="@color/bg_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/sl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.procuratorate.app.widget.ListViewMore
+                android:id="@+id/list_wait_dispatch"
+                android:background="@color/bg_background"
+                android:paddingLeft="@dimen/margin_top"
+                android:footerDividersEnabled="false"
+                android:divider="@color/bg_dispatch_detail"
+                android:dividerHeight="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <TextView
+            android:id="@+id/tv_empty_show"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="暂无数据"/>
+    </FrameLayout>
+</LinearLayout>

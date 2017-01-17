@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_background">#FFFFFF</color>
+    <color name="btn_bg">#0E0F20</color>
+    <color name="border_frame">#E7E7E7</color>
+    <color name="bg_nothing">#00000000</color>
+    <color name="hint_color">#DADADE</color>
+    <color name="bg_login">#303140</color>
+    <color name="bg_title">#2F3140</color>
+    <color name="bottom_tv_false">#91949C</color>
+    <color name="bottom_tv_true">#FAFAFE</color>
+    <color name="bg_dispatch_detail">#C8C8C8</color>
+
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#33000000</color>
+    <color name="light_gray">#999999</color>
+    <color name="bg_touch">#dcdcdc</color>
+    <color name="text_color_normal">#00b9b1</color>
+    <color name="text_color_abnormal">#ff5c62</color>
+    <color name="bg_color">#009fb1</color>
+    <color name="radio_button_selected_color">#009eb0</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+    <color name="bg_menu_selected">#2a3139</color>
+    <color name="input_text_color">#434a54</color>
+    <color name="hint_text_color">#999999</color>
+    <drawable name="list_item_press">#774dd0c7</drawable>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="half_transparent">#22000000</drawable>
+    <drawable name="text_press">#66999999</drawable>
+    <drawable name="white">#ffffff</drawable>
+    <color name="view_indicator_press">#ebf3f7</color>
+    <color name="text_dark">#af000000</color>
+    <color name="text_light">#3f000000</color>
+    <color name="list_divider_color">#DADADA</color>
+    <color name="ui_dialog_divider">@color/list_divider_color</color>
+    <color name="ui_dialog_list_text">#5E5E5E</color>
+    <color name="black">#ff000000</color>
+    <color name="home_press">#dfdfdf</color>
+    <color name="heart_rate_chart">#272e36</color>
+    <color name="heart_rate_line_chart">#00fff0</color>
+    <color name="heart_grid_line">#f9d1cf</color>
+    <color name="spinner_text">#68228B</color>
+
+    <color name="bg_gray">#f7f7f7</color>
+    <color name="red_text">#860E34</color>
+    <color name="divider_gray">#e9e9e9</color>
+    <color name="bg_cover">#e0000000</color>
+
+    <color name="pickerview_timebtn_nor">#860E34</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+
+    <color name="transparent_background">#60000000</color>
+</resources>

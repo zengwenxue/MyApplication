@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:textSize="16sp"
+        android:textColor="@color/bg_background"
+        android:background="@color/bg_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/bg_background"
+            android:background="@color/bg_title"
+            android:text="申请"/>
+        <ImageView
+            android:id="@+id/img_apply"
+            android:src="@drawable/icon_add_apply"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/sl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.procuratorate.app.widget.ListViewMore
+                android:id="@+id/list_apply_data"
+                android:background="@color/bg_background"
+                android:divider="@color/bg_dispatch_detail"
+                android:paddingLeft="@dimen/margin_top"
+                android:footerDividersEnabled="false"
+                android:dividerHeight="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <TextView
+            android:id="@+id/tv_empty_show"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="暂无数据"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <NumberPicker
+            android:id="@+id/np_year"
+            android:gravity="center"
+            android:background="@color/bg_title"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:text="年"
+            android:background="@color/bg_title"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <NumberPicker
+            android:id="@+id/np_mouth"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@color/bg_title"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:text="月"
+            android:background="@color/bg_title"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <NumberPicker
+            android:id="@+id/np_day"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@color/bg_title"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:text="日"
+            android:background="@color/bg_title"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <NumberPicker
+            android:id="@+id/np_hour"
+            android:layout_weight="1"
+            android:background="@color/bg_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:text="时"
+            android:background="@color/bg_title"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <NumberPicker
+            android:id="@+id/np_minute"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@color/bg_title"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:text="分"
+            android:background="@color/bg_title"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/rg_execute"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/bg_title"
+        android:gravity="center_horizontal"
+        android:layout_height="50dp">
+        <RadioButton
+            android:id="@+id/rb_execute_wait"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待执行任务"
+            android:textColor="@color/text_color"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/rb_execute_history"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已完成任务"
+            android:textColor="@color/text_color"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+    <View
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_execute"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
